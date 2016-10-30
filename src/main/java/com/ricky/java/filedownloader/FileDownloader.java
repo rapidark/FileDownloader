@@ -7,7 +7,6 @@ import com.ricky.java.filedownloader.config.FileDownloaderConfiguration;
 /**
  * Java 文件多线程下载
  * @author Ricky Fung
- *
  */
 public class FileDownloader {
 	
