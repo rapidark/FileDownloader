@@ -14,9 +14,9 @@ import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
 
-import com.ricky.common.java.http.HttpClientManager;
 import com.ricky.java.filedownloader.config.FileDownloaderConfiguration;
 import com.ricky.java.filedownloader.exeception.RetryFailedException;
 
@@ -29,7 +29,7 @@ public class HttpRequestImpl {
     private int maxRetryCount;  
     private long requestBytesSize;  
     
-	private CloseableHttpClient httpclient = HttpClientManager.getHttpClient();
+	private CloseableHttpClient httpclient = HttpClientBuilder.create().build();
 	
 	public HttpRequestImpl(FileDownloaderConfiguration configuration){
 		connectTimeout = configuration.getConnectTimeout();

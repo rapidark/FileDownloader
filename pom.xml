@@ -18,11 +18,7 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.ricky.common</groupId>
-			<artifactId>java</artifactId>
-			<version>1.5.0</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
